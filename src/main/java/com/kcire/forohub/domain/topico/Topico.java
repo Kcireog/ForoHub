@@ -1,6 +1,6 @@
 package com.kcire.forohub.domain.topico;
 
-import com.kcire.forohub.domain.Respuesta.Respuesta;
+import com.kcire.forohub.domain.respuesta.Respuesta;
 import com.kcire.forohub.domain.curso.Curso;
 import com.kcire.forohub.domain.usuario.Usuario;
 import jakarta.persistence.*;

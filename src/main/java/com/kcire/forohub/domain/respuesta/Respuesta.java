@@ -1,4 +1,4 @@
-package com.kcire.forohub.domain.Respuesta;
+package com.kcire.forohub.domain.respuesta;
 
 import com.kcire.forohub.domain.topico.Topico;
 import com.kcire.forohub.domain.usuario.Usuario;
