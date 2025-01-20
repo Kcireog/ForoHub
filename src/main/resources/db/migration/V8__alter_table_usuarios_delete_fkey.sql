@@ -1,0 +1,1 @@
+ALTER TABLE usuarios DROP FOREIGN KEY fk_usarios_perfil_id;

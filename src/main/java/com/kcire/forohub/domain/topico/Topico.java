@@ -16,7 +16,6 @@ import java.util.List;
 @Table(name = "topicos")
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Topico {
 
@@ -45,5 +44,14 @@ public class Topico {
     @OneToMany(mappedBy = "topico", cascade = CascadeType.ALL)
     private List<Respuesta> respuestas;
 
+    public Topico(Long id, String titulo, String mensaje, LocalDateTime fechaCreacion, Boolean status, Usuario autor, Curso curso, List<Respuesta> respuestas) {
+        this.titulo = titulo;
+        this.mensaje = mensaje;
+        this.fechaCreacion = fechaCreacion;
+        this.status = status;
+        this.autor = autor;
+        this.curso = curso;
+        this.respuestas = respuestas != null ? respuestas : List.of(); // Lista vacía si no se proporcionan respuestas
+    }
 
 }
