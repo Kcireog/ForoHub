@@ -1,6 +1,7 @@
 package com.kcire.forohub.domain.topico;
 
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
